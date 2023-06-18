@@ -1,0 +1,21 @@
+-- main config
+require("main.plugins-setup")
+require("main.core.options")
+require("main.core.keymaps")
+require("main.core.colorscheme")
+
+-- plugins config
+require("main.plugins.comment")
+require("main.plugins.nvim-tree")
+require("main.plugins.lualine")
+require("main.plugins.telescope")
+require("main.plugins.nvim-cmp")
+require("main.plugins.lsp.mason")
+require("main.plugins.lsp.lspsaga")
+require("main.plugins.lsp.lspconfig")
+require("main.plugins.lsp.null-ls")
+require("main.plugins.autopairs")
+require("main.plugins.treesitter")
+-- require("main.plugins.mind")
+require("main.plugins.colorizer")
+require("main.plugins.bufferline")
