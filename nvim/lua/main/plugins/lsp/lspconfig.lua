@@ -44,17 +44,6 @@ for type, icon in pairs(signs) do
 	local hl = "DiagnosticSign" .. type
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
--- configure html server
-lspconfig["html"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure css server
-lspconfig["cssls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
 
 -- configure lua server (with special settings)
 lspconfig["lua_ls"].setup({
@@ -77,32 +66,20 @@ lspconfig["lua_ls"].setup({
 	},
 })
 
--- configure csharp server
--- lspconfig["csharp-ls"].setup({
--- 	capabilities = capabilities,
--- 	on_attach = on_attach,
--- })
+local servers = {
+	"html",
+	"cssls",
+	"jsonls",
 
--- configure golang server
-lspconfig["gopls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+	"gopls",
+	"pyright",
+	"rust_analyzer",
+	"bashls",
+}
 
--- configure pyright server
-lspconfig["pyright"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure jsonls server
-lspconfig["jsonls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure rust_analyzer server
-lspconfig["rust_analyzer"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+for _, lsp in ipairs(servers) do
+	lspconfig[lsp].setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+	})
+end

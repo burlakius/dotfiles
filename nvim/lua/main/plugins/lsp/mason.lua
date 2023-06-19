@@ -31,6 +31,8 @@ mason_lspconfig.setup({
 		"pyright",
 		"gopls",
 		"rust_analyzer",
+
+		"bashls",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
@@ -44,6 +46,7 @@ mason_null_ls.setup({
 
 		"black", -- python formatter
 		"rustfmt", -- rust formatter
+		"beautysh", -- sh formatter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
