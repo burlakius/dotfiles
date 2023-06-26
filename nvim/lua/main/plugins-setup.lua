@@ -16,7 +16,6 @@ local plugins = {
 	"nvim-lua/plenary.nvim", -- lua functions that many plugins use
 
 	-- Colorscheme
-	-- use("bluz71/vim-nightfly-guicolors")
 	"folke/tokyonight.nvim",
 
 	-- Split window
@@ -72,16 +71,9 @@ local plugins = {
 
 	-- auto closing
 	"windwp/nvim-autopairs", -- autoclose parens, brackets, quotes, etc...
-	-- use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
 	-- git integration
 	"lewis6991/gitsigns.nvim", -- show line modifications on left hand side
-
-	-- use({
-	-- 	"phaazon/mind.nvim",
-	-- 	branch = "v2.2",
-	-- 	requires = { "nvim-lua/plenary.nvim" },
-	-- })
 
 	-- colorizer
 	"norcalli/nvim-colorizer.lua",

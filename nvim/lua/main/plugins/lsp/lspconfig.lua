@@ -74,7 +74,10 @@ local servers = {
 	"gopls",
 	"pyright",
 	"rust_analyzer",
+
 	"bashls",
+	"dockerls",
+	"docker_compose_language_service",
 }
 
 for _, lsp in ipairs(servers) do

@@ -14,6 +14,7 @@ keymap.set("i", "<C-b>", "<ESC>^i")
 keymap.set("i", "<C-e>", "<End>")
 
 -- save file
+keymap.set("n", "<leader>s", "<cmd>w<CR>")
 keymap.set("n", "<C-s>", "<cmd>w<CR>")
 
 -- clear search highlights
@@ -44,7 +45,7 @@ keymap.set("n", "<leader>to", "<cmd>tabnew<CR>") -- open new tab
 -- Bufferline
 keymap.set("n", "<leader>tn", "<cmd>BufferLineCycleNext<CR>")
 keymap.set("n", "<leader>tp", "<cmd>BufferLineCyclePrev<CR>")
-keymap.set("n", "<leader>tx", "<cmd>bdelete<CR>") -- close current buffer
+keymap.set("n", "<leader>tx", "<cmd>NvimTreeClose<CR><cmd>bdelete<CR>") -- close current buffer
 
 -- vim-maximizer
 keymap.set("n", "<leader>sm", "<cmd>MaximizerToggle<CR>") -- toggle split window maximization
