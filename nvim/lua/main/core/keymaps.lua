@@ -25,6 +25,14 @@ keymap.set("n", "<ESC>", "<cmd>nohl<CR>")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
+keymap.set("n", "s", '"_s')
+
+-- delete selected text without copying into register
+keymap.set("v", "d", '"_d')
+keymap.set("v", "D", '"_D')
+
+keymap.set("v", "s", '"_s')
+keymap.set("v", "S", '"_S')
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -48,6 +56,7 @@ keymap.set("n", "<leader>sm", "<cmd>MaximizerToggle<CR>") -- toggle split window
 
 -- nvim-tree
 keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<C-e>", "<cmd>NvimTreeFocus<CR>") -- focus file explorer
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>") -- find files within current working directory, respects .gitignore

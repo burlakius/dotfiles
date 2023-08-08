@@ -66,13 +66,17 @@ lspconfig["lua_ls"].setup({
 	},
 })
 
+lspconfig["pyright"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 local servers = {
 	"html",
 	"cssls",
 	"jsonls",
 
 	"gopls",
-	"pyright",
 	"rust_analyzer",
 
 	"bashls",
