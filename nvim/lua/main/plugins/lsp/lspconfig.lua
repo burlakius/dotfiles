@@ -1,12 +1,14 @@
 -- import lspconfig plugin safely
 local lspconfig_status, lspconfig = pcall(require, "lspconfig")
 if not lspconfig_status then
+	print("Plugin [lspconfig] is not installed")
 	return
 end
 
 -- import cmp-nvim-lsp plugin safely
 local cmp_nvim_lsp_status, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not cmp_nvim_lsp_status then
+	print("Plugin [cmp_nvim_lsp] is not installed")
 	return
 end
 
@@ -66,16 +68,12 @@ lspconfig["lua_ls"].setup({
 	},
 })
 
-lspconfig["pyright"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
 local servers = {
 	"html",
 	"cssls",
 	"jsonls",
 
+	"pyright",
 	"gopls",
 	"rust_analyzer",
 

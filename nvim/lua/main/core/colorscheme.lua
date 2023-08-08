@@ -1,4 +1,3 @@
--- local status, _ = pcall(vim.cmd, "colorscheme nightfly")
 local status, _ = pcall(vim.cmd, "colorscheme tokyonight-moon")
 
 if not status then

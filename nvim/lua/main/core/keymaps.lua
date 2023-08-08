@@ -2,7 +2,9 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
+----------------------------------------------------------------------------------------------------
 -- General Keymaps
+----------------------------------------------------------------------------------------------------
 
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
@@ -19,9 +21,6 @@ keymap.set("n", "<C-s>", "<cmd>w<CR>")
 
 -- clear search highlights
 keymap.set("n", "<ESC>", "<cmd>nohl<CR>")
-
--- clear search highlights
--- keymap.set("v", '<C-">', '<cmd>s/\\%V\\(.*\\)\\%V/"\1"/<CR>')
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
@@ -44,15 +43,14 @@ keymap.set("n", "<leader>to", "<cmd>tabnew<CR>") -- open new tab
 -- keymap.set("n", "<TAB>", "<cmd>tabn<CR>") --  go to next tab
 -- keymap.set("n", "<S-TAB>", "<cmd>tabp<CR>") --  go to previous tab
 
+----------------------------------------------------------------------------------------------------
 -- Plugin Keybinds
+----------------------------------------------------------------------------------------------------
 
 -- Bufferline
 keymap.set("n", "<leader>tn", "<cmd>BufferLineCycleNext<CR>")
 keymap.set("n", "<leader>tp", "<cmd>BufferLineCyclePrev<CR>")
 keymap.set("n", "<leader>tx", "<cmd>NvimTreeClose<CR><cmd>bdelete<CR>") -- close current buffer
-
--- vim-maximizer
-keymap.set("n", "<leader>sm", "<cmd>MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
 keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>") -- toggle file explorer

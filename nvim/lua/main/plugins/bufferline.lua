@@ -1,6 +1,7 @@
 -- import bufferline safely
 local status, bufferline = pcall(require, "bufferline")
 if not status then
+	print("Plugin [bufferline] is not installed")
 	return
 end
 

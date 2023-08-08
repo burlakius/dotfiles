@@ -1,6 +1,7 @@
 -- import nvim-colorizer safely
 local status, colorizer = pcall(require, "colorizer")
 if not status then
+	print("Plugin [colorizer] is not installed")
 	return
 end
 

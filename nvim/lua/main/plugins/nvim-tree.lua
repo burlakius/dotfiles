@@ -1,6 +1,7 @@
 -- import nvim-tree plugin safely
 local setup, nvimtree = pcall(require, "nvim-tree")
 if not setup then
+	print("Plugin [nvim-tree] is not installed")
 	return
 end
 
@@ -48,9 +49,6 @@ nvimtree.setup({
 	},
 	filters = {
 		dotfiles = false,
-		-- exclude = {
-		-- 	".env",
-		-- },
 	},
 	git = {
 		enable = false,

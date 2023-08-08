@@ -1,6 +1,7 @@
 -- import null-ls plugin safely
 local setup, null_ls = pcall(require, "null-ls")
 if not setup then
+	print("Plugin [null_ls] is not installed")
 	return
 end
 

@@ -20,7 +20,6 @@ local plugins = {
 
 	-- Split window
 	"christoomey/vim-tmux-navigator", -- tmux & split window navigation
-	"szw/vim-maximizer", -- maximizes and restores current window
 
 	-- commenting with gc
 	"numToStr/Comment.nvim",
