@@ -49,6 +49,8 @@ mason_null_ls.setup({
 		"black", -- python formatter
 		"rustfmt", -- rust formatter
 		"beautysh", -- sh formatter
+
+		"prettier", -- frontend
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,

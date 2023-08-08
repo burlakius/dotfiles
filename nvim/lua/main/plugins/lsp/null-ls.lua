@@ -22,6 +22,8 @@ null_ls.setup({
 		formatting.gofmt, -- go formatter
 
 		formatting.beautysh, -- bash formatter
+
+		formatting.prettier, -- frontend formatting
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)
