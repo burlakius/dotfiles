@@ -15,6 +15,9 @@ fi
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+cargo install --git https://github.com/XAMPPRocky/tokei.git tokei
+cargo install --locked zellij
+
 echo "VISUAL=vim" >> $HOME/.bashrc
 echo "EDITOR=nvim" >> $HOME/.bashrc
 

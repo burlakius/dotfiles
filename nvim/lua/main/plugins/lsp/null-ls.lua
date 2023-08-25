@@ -16,6 +16,10 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 null_ls.setup({
 	-- setup formatters & linters
 	sources = {
+		-- diagnostics.golangci_lint.with({
+		-- 	method = null_ls.methods.DIAGNOSTICS,
+		-- }),
+
 		formatting.fixjson, -- json formatter
 
 		formatting.stylua, -- lua formatter

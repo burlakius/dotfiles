@@ -68,8 +68,8 @@ local plugins = {
 	-- treesitter
 	"nvim-treesitter/nvim-treesitter",
 
-	-- auto closing
-	"windwp/nvim-autopairs", -- autoclose parens, brackets, quotes, etc...
+	-- auto closing () {} []
+	{ "windwp/nvim-autopairs", event = "InsertEnter" }, -- autoclose parens, brackets, quotes, etc...
 
 	-- git integration
 	"lewis6991/gitsigns.nvim", -- show line modifications on left hand side
@@ -78,7 +78,7 @@ local plugins = {
 	"norcalli/nvim-colorizer.lua",
 
 	-- bufferline
-	{ "akinsho/bufferline.nvim", version = "*" },
+	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 }
 
 local opts = {}

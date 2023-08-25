@@ -13,22 +13,77 @@ scrolling:
 
 font:
   normal:
-    family: JetBrainsMono Nerd Font
-    style:  Regular
+    family: RobotoMono Nerd Font
+    style: Regular
   bold:
-    family: JetBrainsMono Nerd Font
-    style:  Bold
+    family: RobotoMono Nerd Font
+    style: Bold
   italic:
-    family: JetBrainsMono Nerd Font
-    style:  Italic
+    family: RobotoMono Nerd Font
+    style: Italic
   bold_italic:
-    family: JetBrainsMono Nerd Font
+    family: RobotoMono Nerd Font
     style: Bold Italic
   size: 8
 draw_bold_text_with_bright_colors: true
 
-# import:
-#  - ~/.config/alacritty/monokai_charcoal_white.yaml
+schemes:
+  tokyo-night: &tokyo-night # Default colors
+    primary:
+      background: "#1a1b26"
+      foreground: "#a9b1d6"
+
+    # Normal colors
+    normal:
+      black: "#32344a"
+      red: "#f7768e"
+      green: "#9ece6a"
+      yellow: "#e0af68"
+      blue: "#7aa2f7"
+      magenta: "#ad8ee6"
+      cyan: "#449dab"
+      white: "#787c99"
+
+    # Bright colors
+    bright:
+      black: "#444b6a"
+      red: "#ff7a93"
+      green: "#b9f27c"
+      yellow: "#ff9e64"
+      blue: "#7da6ff"
+      magenta: "#bb9af7"
+      cyan: "#0db9d7"
+      white: "#acb0d0"
+
+  tokyo-night-storm: &tokyo-night-storm # Default colors
+    primary:
+      background: "#24283b"
+      foreground: "#a9b1d6"
+
+    # Normal colors
+    normal:
+      black: "#32344a"
+      red: "#f7768e"
+      green: "#9ece6a"
+      yellow: "#e0af68"
+      blue: "#7aa2f7"
+      magenta: "#ad8ee6"
+      cyan: "#449dab"
+      white: "#9699a8"
+
+    # Bright colors
+    bright:
+      black: "#444b6a"
+      red: "#ff7a93"
+      green: "#b9f27c"
+      yellow: "#ff9e64"
+      blue: "#7da6ff"
+      magenta: "#bb9af7"
+      cyan: "#0db9d7"
+      white:
+        "#acb0d0"
+
+        # colors: *tokyo-night-storm
 
 selection:
   save_to_clipboard: false
@@ -38,4 +93,3 @@ shell:
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
-

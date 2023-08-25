@@ -6,6 +6,7 @@ require("main.core.colorscheme")
 
 -- plugins config
 require("main.plugins.comment")
+require("main.plugins.gitsigns")
 require("main.plugins.nvim-tree")
 require("main.plugins.lualine")
 require("main.plugins.telescope")

@@ -7,7 +7,7 @@ local keymap = vim.keymap
 ----------------------------------------------------------------------------------------------------
 
 -- use jk to exit insert mode
-keymap.set("i", "jk", "<ESC>")
+--keymap.set("i", "jk", "<ESC>")
 
 -- move to beginning of line
 keymap.set("i", "<C-b>", "<ESC>^i")
