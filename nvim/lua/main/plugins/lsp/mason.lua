@@ -50,7 +50,6 @@ mason_null_ls.setup({
 		"fixjson", -- json formatter
 
 		"black", -- python formatter
-		"rustfmt", -- rust formatter
 		"beautysh", -- sh formatter
 
 		"prettier", -- frontend

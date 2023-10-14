@@ -36,6 +36,7 @@ keymap.set("v", "S", '"_S')
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
+keymap.set("n", "<leader>sf", "<C-w>|") -- maximize window
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>sx", "<cmd>close<CR>") -- close current split window
 
@@ -62,3 +63,8 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>") -- list available help tags
+
+keymap.set("n", "<leader>vt", "<cmd>split<CR><cmd>terminal<CR>") -- open terminal vertically
+keymap.set("n", "<leader>vt", "<cmd>vsplit<CR><cmd>terminal<CR>") -- open terminal horizontally
+
+keymap.set("t", "<Esc>", "<C-\\><C-n>") -- set NORMAL mode in terminal
